@@ -82,8 +82,6 @@ public class FtcOpModeRegister implements OpModeRegister {
     manager.register("K9TeleOp", K9TeleOp.class);
     manager.register("K9IrSeeker", K9IrSeeker.class);
     manager.register("K9Line", K9Line.class);
-    manager.register("AutonomousSquare", AutonomousSquare.class);
-    manager.register("GamepadTelemetry", GamepadTelemetry.class);
 
     /*
      * The following example op modes are designed to work with a pushbot-style robot.
@@ -101,9 +99,11 @@ public class FtcOpModeRegister implements OpModeRegister {
     manager.register("PushBotSquare", PushBotSquare.class);
 
     /*
-     * TaterOps
-     */
-    manager.register("GamepadTelemetry", GamepadTelemetry.class);
+    * TaterOps
+    */
+
+      manager.register("GamepadTelemetry", GamepadTelemetry.class);
+      manager.register("AutonomousSquare", AutonomousSquare.class);
     
   }
 }

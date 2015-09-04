@@ -71,7 +71,7 @@ public class AutonomousSquare extends LinearOpMode {
             motorLeft2.setPower(0.5);
             motorRight2.setPower(-0.5);
             motorRight1.setPower(-0.5);
-            sleep(1000);
+            sleep(750);
         }
 
         motorLeft1.setPowerFloat();
