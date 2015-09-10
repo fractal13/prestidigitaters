@@ -37,31 +37,31 @@ public class GamepadTelemetry extends OpMode {
 	@Override
 	public void loop() {
 	    String ls = String.format("LS: %d %4.2f %4.2f",
-				      gamepad1.left_stick_button,
+				      gamepad1.left_stick_button ? 1 : 0,
 				      gamepad1.left_stick_x,
 				      gamepad1.left_stick_y);
 	    String rs = String.format("RS: %d %4.2f %4.2f",
-				      gamepad1.right_stick_button,
+				      gamepad1.right_stick_button ? 1 : 0,
 				      gamepad1.right_stick_x,
 				      gamepad1.right_stick_y);
 	    String dp = String.format("DP: %d %d %d %d",
-				      gamepad1.dpad_up,
-				      gamepad1.dpad_down,
-				      gamepad1.dpad_left,
-				      gamepad1.dpad_right);
+				      gamepad1.dpad_up ? 1 : 0,
+				      gamepad1.dpad_down ? 1 : 0,
+				      gamepad1.dpad_left ? 1 : 0,
+				      gamepad1.dpad_right ? 1 : 0);
 	    String bn = String.format("BN: %d %d %d %d",
-				      gamepad1.a,
-				      gamepad1.b,
-				      gamepad1.x,
-				      gamepad1.y);
-	    String mb = String.format("MB: %d %d %d %d",
-				      gamepad1.back,
-				      gamepad1.guide,
-				      gamepad1.start);
+				      gamepad1.a ? 1 : 0,
+				      gamepad1.b ? 1 : 0,
+				      gamepad1.x ? 1 : 0,
+				      gamepad1.y ? 1 : 0);
+	    String mb = String.format("MB: %d %d %d",
+				      gamepad1.back ? 1 : 0,
+				      gamepad1.guide ? 1 : 0,
+				      gamepad1.start ? 1 : 0);
 	    String tr = String.format("TR: %d %4.2f %d %4.2f",
-				      gamepad1.left_bumper,
+				      gamepad1.left_bumper ? 1 : 0,
 				      gamepad1.left_trigger,
-				      gamepad1.right_bumper,
+				      gamepad1.right_bumper ? 1 : 0,
 				      gamepad1.right_trigger);
 
 	    
